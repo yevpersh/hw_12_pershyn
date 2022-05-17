@@ -82,6 +82,12 @@ h1{
     color: white;
     font-weight: bold;
     font-size: 18px;
+    border: #ff3f40 1px solid;
+}
+.about a:hover{
+    background-color: white;
+    transition: .03s;
+    color: #ff2d2d;
 }
 
 /* Services */
@@ -111,6 +117,11 @@ h1{
     color: #ff3f40;
     font-weight: bold;
     font-size: 18px;
+}
+.services a:hover{
+    background-color: #ff2d2d;
+    color: white;
+    transition: .3s;
 }
 .services .services__list{
     display: flex;
@@ -160,7 +171,6 @@ h1{
 }
 .feature__item{
     margin-top: 88px;
-    margin-bottom: 65px;
 }
 .feature__nav a{
     font-size: 17px;
@@ -185,18 +195,15 @@ h1{
 .feature__item{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
-    margin-bottom: 135px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 .feature__item div{
-    width: calc(25% - 30px);
+    width: calc(25% - 15px);
 }
-.feature__item img{
-    width: 300px;
-    height: 300px;
+.feature{
+    margin-bottom: 135px;
 }
-
 /*Meet our teem*/
 .team h2{
     font-weight: bold;
@@ -221,7 +228,6 @@ h1{
 }
 .team .team__members{
     display: flex;
-    margin-bottom: 110px;
 }
 .team .team__img img{
     width: 375px;
@@ -277,6 +283,9 @@ h1{
     text-align: center;
     padding: 5px 50px;
 }
+   .team{
+       margin-bottom: 110px;
+   }
    /*Subscribe*/
 .subscribe{
     background-color: #f5f0dd;
@@ -304,7 +313,7 @@ h1{
     border: white solid;
     border-radius: 6px;
 }
-.subscribe__area a {
+.subscribe__area a{
     text-transform: uppercase;
     background-color: #ff3f40;
     border-radius: 5px;
@@ -313,23 +322,21 @@ h1{
     font-weight: bold;
     font-size: 16px;
 }
+.subscribe__area a:hover{
+    background-color: white;
+    color: #ff2d2d;
+    transition: .3s;
+}
 
 /* Get in touch */
-.get-in-touch .container,
-.get-in-touch .for-after{
-    display: flex;
+.get-in-touch__text{
+    max-width: 60%;
 }
-.get-in-touch h5{
+ .get-in-touch h5{
     text-transform: uppercase;
     font-size: 35px;
     font-weight: bold;
     margin: 110px 0 50px 0;
-}
-.get-in-touch .get-in-touch__area{
-    max-width: 735px;
-}
-.get-in-touch__area p{
-    padding-bottom: 60px;
 }
 .get-in-touch__info:after{
     content: '';
@@ -337,19 +344,23 @@ h1{
     background-color: #ff3f40;
     width: 130px;
     height: 1px;
+    margin-top: 60px;
     margin-bottom: 75px;
 }
-.get-in-touch__user-data{
-    display: flex;
-    column-gap: 45px;
-    margin-bottom: 45px;
+.get-in-touch__form{
+    max-width: 60%;
+    margin-right: 110px;
 }
 .get-in-touch__area input{
-    width: 347px;
+    width: 350px;
     padding: 30px 0 30px 35px;
     background-color: #e5e5e5;
     border: #e5e5e5 solid;
     border-radius: 6px;
+    margin-bottom: 45px;
+}
+#name{
+    margin-right: 40px;
 }
 .get-in-touch__area textarea{
     resize: none;
@@ -361,7 +372,7 @@ h1{
     padding: 30px 0 0 35px;
     margin-bottom: 45px;
 }
-.get-in-touch__area a {
+.get-in-touch__area a{
     width: 740px;
     text-transform: uppercase;
     background-color: #ff3f40;
@@ -371,10 +382,18 @@ h1{
     font-weight: bold;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 110px;
+    border: #ff2d2d 1px solid;
+}
+.get-in-touch__area a:hover{
+    background-color: white;
+    color: #ff2d2d;
+    transition: .3s;
+    border: #ff2d2d 1px solid;
+}
+.get-in-touch__area{
+    display: flex;
 }
 .get-in-touch__contact{
-    margin: 444px 0 110px 110px;
     background-color: #2d2d2d;
     color: #d5d5d5;
     padding: 145px 0 0 80px;
@@ -389,21 +408,21 @@ h1{
 .get-in-touch__contact-mail{
     padding-bottom: 32px;
 }
-.get-in-touch .for-after{
+.get-in-touch .get-in-touch__area{
     position: relative;
 }
-.get-in-touch .for-after:after {
+.get-in-touch .get-in-touch__area:after {
     content: '';
     display: block;
     background-color: #2d2d2d;
     position: absolute;
     left: 100%;
     width: 100%;
-    height: 47%;
-    margin-top: 444px;
+    height: 100%;
 }
 .get-in-touch{
     overflow: hidden;
+    margin-bottom: 110px;
 }
     /* Footer */
 footer{
